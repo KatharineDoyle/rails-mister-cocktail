@@ -1,0 +1,7 @@
+<%= simple_form_for (@cocktail) do |cocktail| %>
+<div class="form-group">
+  <%= cocktail.label :name %>
+  <%= cocktail.text_field :name, class: 'form-control' %>
+<%= cocktail.submit class: 'btn btn-primary'  %>
+</div>
+<% end %>
