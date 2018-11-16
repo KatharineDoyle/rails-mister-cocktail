@@ -23,9 +23,9 @@ gem 'bootstrap-sass', '~> 3.3.7'
 gem 'font-awesome-sass', '~> 5.0.9'
 gem 'simple_form'
 
-gem 'dotenv-rails', groups: [:development, :test]
-gem 'cloudinary'
 gem 'carrierwave', '~> 1.2'
+gem 'cloudinary'
+gem 'dotenv-rails', groups: [:development, :test]
 
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'

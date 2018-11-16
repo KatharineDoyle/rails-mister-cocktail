@@ -1,12 +1,12 @@
-<%= simple_form_for (@cocktail) do |cocktail| %>
+<%= simple_form_for (@cocktail) do |form| %>
 <div class="form-group">
-  <%= cocktail.label :name %>
-  <%= cocktail.text_field :name, class: 'form-control' %>
+  <%= form.label :name %>
+  <%= form.text_field :name, class: 'form-control' %>
 </div>
 <div class="form-group">
- <%= f.input :photo %>
-  <%= f.input :photo_cache, as: :hidden %>
+ <%= form.input :photo %>
+  <%= form.input :photo_cache, as: :hidden %>
   </div>
-<%= cocktail.submit class: 'btn btn-primary'  %>
+<%= form.submit class: 'btn btn-primary'  %>
 </div>
 <% end %>

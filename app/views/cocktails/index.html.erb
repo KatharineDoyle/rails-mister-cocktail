@@ -7,34 +7,19 @@
 
 
 <div class="container">
-   <ul>
-    <% @cocktails.each do |cocktail| %>
-    <li>
-      <div class="col-xs12 col-sm-4">
-        <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://d22ir9aoo7cbf6.cloudfront.net/wp-content/uploads/sites/2/2015/08/The-Powder-Room.jpg');">
-          <div class="row">
-             <div class="card-description">
-            <%= link_to cocktail.name, cocktail %>
-          </div>
-          </div>
-          <div class="col-xs-6 col-sm-4">
-            <!-- insert <div class="card"> -->
-            </div>
-            <div class="col-xs-6 col-sm-4">
-              <!-- insert <div class="card"> -->
-              </div>
-            </li>
-            <% end %>
-          </ul>
-        </div>
-<div class="card"
-  style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)),
-         url('<%= cl_image_path @cocktail.photo, height: 300, width: 400, crop: :fill %>')">
-  <div class="card-category">Popular</div>
-  <div class="card-description">
-    <h2>Some stuff</h2>
-    <p>Very cool stuff, useful and smart</p>
+ <ul>
+  <% @cocktails.each do |cocktail| %>
+  <li>
+    <div class="row">
+        <div class="card"
+        style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)),
+        url("<%= cl_image_path "#{cocktail.photo.nil? ? 'cocktail_1' : cocktail.photo}", height: 300, width: 400, crop: :fill %>")">
+        <div class="col-xs12 col-sm-4">
+        <%= link_to cocktail.name, cocktail %>
+          <% end %>
+      </div>
+    </div>
   </div>
-  <a class="card-link" href="#" ></a>
-</div>
+</li>
+</ul>
 </div>
