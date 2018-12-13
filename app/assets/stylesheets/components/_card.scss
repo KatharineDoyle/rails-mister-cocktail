@@ -1,5 +1,9 @@
-.card {
-  height: 175px;
+.cocktail-card {
+  width: 350px;
+  height: 500px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.5);
+  text-align: center;
   text-shadow: 0 1px 3px rgba(0,0,0,0.6);
   background-size: cover !important;
   background-position: center;
@@ -8,6 +12,12 @@
   margin-top: 50px;
   padding: 25px 50px 75px 100px;
 }
+
+.cocktail-card:hover {
+  top: -2px;
+  box-shadow: 3px 4px 25px rgba(0,0,0,0.7);
+}
+
 .card-user {
   position: absolute;
   right: 10px;
@@ -15,13 +25,7 @@
   width: 40px;
   border-radius: 50%;
 }
-.card-category {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  font-size: 15px;
-  text-transform: uppercase;
-}
+
 .card-description {
   position: absolute;
   bottom: 10px;

@@ -1,1 +1,16 @@
-// Specific CSS for your home-page
+// // body {
+// //  background-image: url("https://res.cloudinary.com/dnasixvno/image/upload/v1544723130/michael-discenza-199756-unsplash.jpg");
+// //  background-color: #cccccc;
+// //  background-repeat: none;
+//     background-size: cover !important;
+// // }
+
+.container {
+  display: grid;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.banner-content h1 {
+  padding: 42px;
+}
