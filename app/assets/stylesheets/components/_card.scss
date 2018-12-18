@@ -13,9 +13,16 @@
   padding: 25px 50px 75px 100px;
 }
 
+.cocktail-card a {
+  color: white;
+  font-family: "Raleway", "Helvetica", "sans-serif";
+}
+
 .cocktail-card:hover {
   top: -2px;
   box-shadow: 3px 4px 25px rgba(0,0,0,0.7);
+  text-decoration: none;
+  font-size: 30px;
 }
 
 .card-user {

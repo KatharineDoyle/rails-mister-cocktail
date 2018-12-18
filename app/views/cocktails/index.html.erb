@@ -1,21 +1,27 @@
 <div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('https://munchies-images.vice.com/wp_upload/rosesharon.jpg?crop=0.7111111111111111xw%3A1xh%3Bcenter%2Ccenter&resize=2000%3A*');">
-  <div class="banner-content">
-    <h1>Liqourdinate</h1>
-  <div class="add-cocktail-header"><%= link_to "Add a cocktail", new_cocktail_path, class: 'btn-add'  %></div>
+  <div class="banner-box">
+    <div class="banner-content">
+      <h1>Liqourdinate</h1>
+      <h2>Create your personalised cocktail recipe list.</h2>
+      <div class="add-cocktail-header"><%= link_to "Add yours!", new_cocktail_path, class: 'btn-add'  %></div>
+      <div class="icon-box">
+      <i class="fas fa-cocktail" style="color: white;"></i>
+    </div>
+    </div>
   </div>
 </div>
 
 
 <div class="container">
   <% @cocktails.each do |cocktail| %>
-    <div class="row">
-      <div class="col-xs-6 col-sm-6">
-        <div class="cocktail-card"
-        style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)),
-        url("<%= cl_image_path "#{cocktail.photo.nil? ? 'cocktail_1' : cocktail.photo}", height: 300, width: 400, crop: :fill %>")">
-        <%= link_to cocktail.name, cocktail %>
+  <div class="row">
+    <div class="col-xs-12 col-sm-4">
+      <div class="cocktail-card"
+      style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)),
+      url("<%= cl_image_path "#{cocktail.photo.nil? ? 'cocktail_1' : cocktail.photo}", height: 300, width: 400, crop: :fill %>")">
+      <%= link_to cocktail.name, cocktail %>
       </div>
-      <% end %>
     </div>
+  <% end %>
   </div>
 </div>

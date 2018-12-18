@@ -5,12 +5,22 @@
 //     background-size: cover !important;
 // // }
 
-.container {
-  display: grid;
-  flex-direction: row;
-  justify-content: center;
-}
-
 .banner-content h1 {
   padding: 42px;
 }
+
+.banner-content h2 {
+  font-size: 20px;
+}
+
+.banner-box {
+  background-color: $black;
+  display: flex;
+  justify-content: center;
+  opacity: 0.7;
+  width: 580px;
+  height: 300px;
+  border-color: white;
+  border-radius: 10px;
+}
+
