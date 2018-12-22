@@ -1,7 +1,10 @@
+<div class="show-container" style="background-image: url('https://res.cloudinary.com/dnasixvno/image/upload/v1545148553/alexandre-godreau-447229-unsplash.jpg')">
+<div class="cocktail-info">
 <h1><%= @cocktail.name %></h1>
 
 <%= cl_image_tag @cocktail.photo, height: 300, width: 400, crop: :fill %>
-
+</div>
+<div class="dose-info">
 <ul>
 <% @cocktail.doses.each do |dose| %>
   <li>
@@ -10,8 +13,12 @@
   </li>
 <% end %>
 </ul>
+</div>
+
 
 <%= link_to "Go back", cocktails_path %>
 
 <h2>Add an ingredient</h2>
 <%= render 'doses/form', cocktail: @cocktail, dose: @dose %>
+
+</div>

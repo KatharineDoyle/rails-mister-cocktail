@@ -11,11 +11,13 @@
 
 .banner-content h2 {
   font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .banner-box {
   background-color: $black;
-  display: flex;
   justify-content: center;
   opacity: 0.7;
   width: 580px;

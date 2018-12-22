@@ -1,0 +1,26 @@
+.show-container {
+  height: 100vh;
+  align-items: center;
+}
+
+.cocktail-info {
+  padding: 2em;
+  justify-content: space-between;
+  // flex-direction: column;
+  margin-left: 40px;
+  margin-right: 40px;
+  border-radius: 5px;
+  position:relative;
+  display: flex;
+  padding: 68px;
+  background-color: $black;
+  opacity: 0.7;
+}
+
+.cocktail-info h1 {
+  color: white;
+}
+
+.dose-info {
+
+}

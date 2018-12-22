@@ -7,6 +7,7 @@
   text-shadow: 0 1px 3px rgba(0,0,0,0.6);
   background-size: cover !important;
   background-position: center;
+  background-image: url('https://res.cloudinary.com/dnasixvno/image/upload/v1545146583/vwxyclrhq3r74466wjzp.jpg');
   color: white;
   position: relative;
   margin-top: 50px;
@@ -23,14 +24,13 @@
   box-shadow: 3px 4px 25px rgba(0,0,0,0.7);
   text-decoration: none;
   font-size: 30px;
+  border-radius: 10px;
 }
 
-.card-user {
+.cocktail-card-pic {
   position: absolute;
-  right: 10px;
-  top: 10px;
-  width: 40px;
-  border-radius: 50%;
+  top: 0; left: 0;
+  height: 100%; width: 100%;
 }
 
 .card-description {
