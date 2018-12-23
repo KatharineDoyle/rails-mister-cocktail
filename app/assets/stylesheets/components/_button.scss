@@ -9,3 +9,16 @@
   color: black;
   background-color: $green;
 }
+
+.btn-back {
+  background-color: $green;
+  color: white;
+  padding: 20px 20px;
+  border-radius: 10px;
+}
+
+.btn-back:hover {
+  background-color: $pink;
+  color: black;
+  text-decoration: none;
+}
