@@ -3,44 +3,46 @@
     <div class="banner-content">
       <i class="fas fa-cocktail" style="color: white;"></i>
       <h1>Spirited Away</h1>
-      <h2>Create your personalised cocktail recipe list.</h2>
-      <div class="add-cocktail-header"><%= link_to "Add yours!", new_cocktail_path, class: 'btn-add'  %>
+      <h2>Always thinking outside the glass, but nowhere to store your recipes? Do it here!</h2>
+      <div class="icon-box">
+         <img src="https://res.cloudinary.com/dnasixvno/image/upload/v1545561951/noun_Margarita_872924.png" class="icon">
+        <img src="https://res.cloudinary.com/dnasixvno/image/upload/v1545562060/noun_Drink_872916_copy.png" class="icon">
+        <img src="https://res.cloudinary.com/dnasixvno/image/upload/v1545561966/noun_drinks_1264540.png" class="icon">
+      </div>
+      <div class="add-cocktail-header"><%= link_to "Add yours!", new_cocktail_path, class: 'btn-add' %>
       </div>
     </div>
     </div>
   </div>
-</div>
 
-<div class="header-container">
-  <div class="image-box">
-  <img src="https://res.cloudinary.com/dnasixvno/image/upload/v1545510197/crew-89808-unsplash.jpg">
-  </div>
-  <div class="header-text">
-  <h1>Hear what our fans have to say...</h1>
-  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
-  </div>
-</div>
 
-<div class="container">
-  <% @cocktails.each do |cocktail| %>
-  <div class="row">
-    <div class="col-xs-12 col-sm-4">
-      <div class="cocktail-card">
-      <%= cl_image_tag cocktail.photo, height: 500, width: 350, crop: :fill, class: 'cocktail-card-pic' unless cocktail.photo.nil? %>
-      <div class="card-text-box">
-      <%= link_to cocktail.name, cocktail, class: 'card-text' %>
-      </div>
-      </div>
+  <div class="header-container">
+    <div class="header-feedback">
+    <div class="feedback-box">
+    <h1>Check out what our bartender friends have to say...</h1>
+  </div>
+    <div class="image-box">
+      <img src="https://res.cloudinary.com/dnasixvno/image/upload/v1545510197/crew-89808-unsplash.jpg">
     </div>
-  <% end %>
+    </div>
+    <div class="header-text">
+      <p>The bartending industry is a vast but exhilerating one. With Spirited Away, anyone can become a bartender. We like the personalised approach of the site, and how you can search recipes from others or add yourself to the conversation!</p>
+      <h2>Lauren and David, <i>The Sheep's Head</i></h2>
+    </div>
   </div>
-</div>
 
-<!-- style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)),
-      url -->
-<!--
-
-cocktail.photo.nil? ? 'cocktail_1' :
- -->
-<!--
+  <div class="container">
+    <% @cocktails.each do |cocktail| %>
+    <div class="row">
+      <div class="col-xs-12 col-sm-4">
+        <div class="cocktail-card">
+          <%= cl_image_tag cocktail.photo, height: 500, width: 350, crop: :fill, class: 'cocktail-card-pic' unless cocktail.photo.nil? %>
+          <div class="card-text-box">
+            <%= link_to cocktail.name, cocktail, class: 'card-text' %>
+          </div>
+        </div>
+      </div>
+      <% end %>
+    </div>
+  </div>
 

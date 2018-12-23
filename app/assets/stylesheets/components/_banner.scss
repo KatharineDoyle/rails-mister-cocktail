@@ -13,10 +13,7 @@
   font-size: 50px;
   font-weight: bold;
   text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
-}
-
-.banner h2 {
-  margin-bottom: 20%;
+  font-family: 'Major Mono Display', monospace;
 }
 
 .banner p {
@@ -27,4 +24,7 @@
   margin-bottom: 30px;
 }
 
-
+.add-cocktail-header {
+  margin-top: 7%;
+  margin-bottom: 8%;
+}

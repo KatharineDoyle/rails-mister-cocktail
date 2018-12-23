@@ -27,15 +27,64 @@
 }
 
 .header-container {
+  color: white;
   display: flex;
   padding: 50px;
   min-height: 100vh;
   margin: 30px;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #061623;
 }
 
+.header-container p h1 {
+  color: white;
+}
+
+.header-container h2 {
+  margin-bottom: 0;
+}
+
+.icon-box {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.icon {
+  height: 100px;
+  width: 100px;
+}
+
+.feedback-box h1 {
+  font-size: 20px;
+  text-align: center;
+  border-bottom: solid $yellow;
+  display: table-cell;
+}
 
 .header-text {
   flex-direction: column;
+  color: $black;
+  border-color: $yellow;
+  border-style: solid;
+  padding: 10px 40px 10px 40px;
+  text-align: center;
+}
+
+.header-feedback {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header-text h2 {
+  font-size: 13px;
+  color: white;
+}
+
+.header-text p {
+  color: white;
 }
 
 .header-container img {
