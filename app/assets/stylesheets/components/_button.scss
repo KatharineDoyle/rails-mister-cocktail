@@ -10,6 +10,10 @@
   background-color: $green;
 }
 
+.btn-add:active {
+  outline: none;
+}
+
 .btn-back {
   background-color: $green;
   color: white;
@@ -21,4 +25,12 @@
   background-color: $pink;
   color: black;
   text-decoration: none;
+}
+
+.btn-back:active {
+  outline: none;
+}
+
+#show-back {
+  align-text: center;
 }

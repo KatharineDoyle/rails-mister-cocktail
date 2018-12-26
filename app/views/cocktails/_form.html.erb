@@ -1,16 +1,26 @@
 
+<div class="form-container">
+  <%= simple_form_for (@cocktail) do |form| %>
 
-  <div class="form-box">
-<%= simple_form_for (@cocktail) do |form| %>
-<div class="form-group">
-  <%= form.label :name %>
-  <%= form.text_field :name, class: 'form-control' %>
-</div>
-<div class="form-group">
- <%= form.input :photo %>
-  <%= form.input :photo_cache, as: :hidden %>
+  <div class="row">
+    <div class="col-xs-12 col-sm-4 col-sm-offset-4">
+      <div class="form-box">
+        <div class="form-content">
+      <h1>Create some cocktail magic...</h1>
+        <div class="icon-box">
+         <img src="https://res.cloudinary.com/dnasixvno/image/upload/v1545561951/noun_Margarita_872924.png" class="icon">
+        <img src="https://res.cloudinary.com/dnasixvno/image/upload/v1545562060/noun_Drink_872916_copy.png" class="icon">
+        <img src="https://res.cloudinary.com/dnasixvno/image/upload/v1545561966/noun_drinks_1264540.png" class="icon">
+        </div>
+        <%= form.label :name, class: 'form-name' %>
+        <%= form.text_field :name, class: 'form-control' %>
+        <%= form.input :photo, class: 'form-photo'%>
+        <%= form.input :photo_cache, as: :hidden %>
+        <%= form.submit class: 'btn-add', id: 'form-add-btn'  %>
+        </div>
+      </div>
+    </div>
+    <% end %>
   </div>
-<%= form.submit class: 'btn btn-primary'  %>
 </div>
-<% end %>
-</div>
+
