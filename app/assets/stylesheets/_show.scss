@@ -1,6 +1,8 @@
 .show-container {
   margin: 50px auto;
   align-items: center;
+  // display: flex;
+  // flex-direction: column;
 }
 
 .cocktail-details {
@@ -25,7 +27,6 @@
 
 .cocktail-img {
   height: 100%;
-  object-fit: cover;
 }
 
 .cocktail-info {
@@ -37,9 +38,14 @@
   border-bottom: solid $yellow;
   margin-left: 3%;
   margin-right: 3%;
-  margin-bottom: 5%;
 }
 
+.cocktail-info h2 {
+  font-size: 18px;
+  margin-left: 3%;
+  margin-right: 3%;
+  margin-bottom: 5%;
+}
 
 .dose-info {
   border-color: $yellow;
@@ -53,8 +59,8 @@
 
 #show-back {
   width: 40%;
-  margin-left: 30%;
-  margin-right: 30%
+  margin-left: 50%;
+  align-text: center;
 }
 
 
