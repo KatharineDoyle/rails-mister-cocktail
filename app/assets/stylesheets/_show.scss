@@ -7,41 +7,50 @@
 
 .cocktail-details {
   padding: 2em;
-  justify-content: space-evenly;
+  justify-content: space-around;
   // flex-direction: column;
   margin-left: 40px;
   margin-right: 40px;
   border-radius: 5px;
   position:relative;
   display: flex;
-  padding: 68px;
+  padding: 30px;
   background-color: $black;
   flex-direction: row;
+  align-items: flex-start;
 }
 
 .cocktail-details h2 {
+  font-family: 'Poiret One', cursive;
   color: white;
   border-bottom: solid $yellow;
   padding: 0px 20px 20px 20px;
 }
 
 .cocktail-img {
-  height: 100%;
+  height: 700px;
+  object-fit: cover;
 }
 
 .cocktail-info {
   align-items: left;
+  display: flex;
+  flex-direction: column;
 }
 
 .cocktail-info h1 {
+  font-family: 'Poiret One', cursive;
   color: $black;
   border-bottom: solid $yellow;
   margin-left: 3%;
   margin-right: 3%;
+  font-weight: bolder;
 }
 
 .cocktail-info h2 {
-  font-size: 18px;
+  font-family: 'Poiret One', cursive;
+  font-size: 15px;
+  font-weight: bolder;
   margin-left: 3%;
   margin-right: 3%;
   margin-bottom: 5%;
@@ -53,8 +62,18 @@
   color: white;
 }
 
+.dose-with-form {
+  display: flex;
+  flex-direction: column;
+}
+
 .dose-info li {
+  text-align: center;
   padding: 15px;
+  list-style-type: none;
+}
+.delete-btn:hover {
+  text-decoration: none;
 }
 
 #show-back {

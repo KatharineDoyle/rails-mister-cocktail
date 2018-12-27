@@ -1,32 +1,34 @@
 <div class="show-container">
   <div class="cocktail-info">
-      <h1><%= @cocktail.name %></h1>
-      <div class="cocktail-details">
-      <%= cl_image_tag @cocktail.photo, height: 300, width: 400, crop: :fill, class: 'cocktail-img' %>
+    <h1><%= @cocktail.name %></h1>
+    <div class="cocktail-details">
+      <%= cl_image_tag @cocktail.photo, crop: :fill, class: 'cocktail-img' %>
+      <div class="dose-with-form">
       <div class="dose-info">
         <h2>Ingredients:</h2>
         <ul>
           <% @cocktail.doses.each do |dose| %>
           <li>
             <%= dose.ingredient.name %> ( <%= dose.description %> )
-            <%= link_to "🗑", dose_path(dose), method: :delete %>
+            <%= link_to "🗑", dose_path(dose), method: :delete, class: 'delete-btn' %>
           </li>
           <% end %>
         </ul>
-      </div>
-      </div>
-  </div>
-</div>
-      <%= link_to "Go back", cocktails_path, class: 'btn-back', id: 'show-back' %>
-
-
-      <div class="cocktail-info">
-        <h1>Add an ingredient</h1>
-        <h2>The cocktail community awaits your recipe!</h2>
       </div>
       <div class="form-container">
         <div class="form-content">
           <%= render 'doses/form', cocktail: @cocktail, dose: @dose %>
         </div>
       </div>
+      </div>
+      <!-- <div class="cocktail-info">
+        <h1>Add an ingredient</h1>
+        <h2>The cocktail community awaits your recipe!</h2> -->
+  <!--       </div> -->
     </div>
+  </div>
+</div>
+</div>
+<%= link_to "Go back", cocktails_path, class: 'btn-back', id: 'show-back' %>
+
+
