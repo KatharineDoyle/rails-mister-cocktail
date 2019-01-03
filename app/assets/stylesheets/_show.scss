@@ -1,3 +1,13 @@
+.banner {
+  background-size: cover !important;
+  display: block;
+  max-width: 100%;
+  height: 140vh;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-attachment: fixed;
+}
+
 .show-container {
   margin: 50px auto;
   align-items: center;
@@ -15,21 +25,39 @@
   position:relative;
   display: flex;
   padding: 30px;
-  background-color: $black;
   flex-direction: row;
-  align-items: flex-start;
 }
 
 .cocktail-details h2 {
+  font-size: 40px;
+  font-weight: bolder;
   font-family: 'Poiret One', cursive;
   color: white;
-  border-bottom: solid $yellow;
+  border-bottom: solid $black;
+  padding: 0px 20px 20px 20px;
+}
+
+.cocktail-details h3 {
+  font-size: 15px;
+  font-family: 'Poiret One', cursive;
+  color: white;
   padding: 0px 20px 20px 20px;
 }
 
 .cocktail-img {
   height: 700px;
   object-fit: cover;
+  position: relative;
+}
+
+.dose-with-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.dose-form {
+  flex: 1 auto;
 }
 
 .cocktail-info {
@@ -47,9 +75,21 @@
   font-weight: bolder;
 }
 
+.cocktail-info h4 {
+  font-family: 'Poiret One', cursive;
+  color: $black;
+  font-size: 40px;
+  border-bottom: solid $yellow;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 3%;
+  margin-right: 3%;
+  font-weight: bolder;
+}
+
 .cocktail-info h2 {
   font-family: 'Poiret One', cursive;
-  font-size: 15px;
+  font-size: 30px;
   font-weight: bolder;
   margin-left: 3%;
   margin-right: 3%;
@@ -57,14 +97,11 @@
 }
 
 .dose-info {
-  border-color: $yellow;
+  background-color: $green;
+  border-radius: 10px;
+  padding: 20px;
   border-style: solid;
   color: white;
-}
-
-.dose-with-form {
-  display: flex;
-  flex-direction: column;
 }
 
 .dose-info li {
@@ -81,7 +118,3 @@
   margin-left: 50%;
   align-text: center;
 }
-
-
-
-

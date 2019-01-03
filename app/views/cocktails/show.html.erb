@@ -1,34 +1,35 @@
-<div class="show-container">
   <div class="cocktail-info">
-    <h1><%= @cocktail.name %></h1>
+    <h4><%= @cocktail.name %></h4>
+<div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('https://res.cloudinary.com/dnasixvno/image/upload/v1544723130/michael-discenza-199756-unsplash.jpg');">
+<div class="show-container">
     <div class="cocktail-details">
       <%= cl_image_tag @cocktail.photo, crop: :fill, class: 'cocktail-img' %>
       <div class="dose-with-form">
-      <div class="dose-info">
-        <h2>Ingredients:</h2>
-        <ul>
-          <% @cocktail.doses.each do |dose| %>
-          <li>
-            <%= dose.ingredient.name %> ( <%= dose.description %> )
-            <%= link_to "🗑", dose_path(dose), method: :delete, class: 'delete-btn' %>
-          </li>
-          <% end %>
-        </ul>
-      </div>
-      <div class="form-container">
-        <div class="form-content">
-          <%= render 'doses/form', cocktail: @cocktail, dose: @dose %>
+        <div class="dose-info">
+          <h2>Ingredients:</h2>
+            <h3>Add some ingredients:</h3>
+            <% if @cocktail.doses.nil? %>
+            <%= "No ingredients to see here!" %>
+            <% else %>
+          <ul>
+            <% @cocktail.doses.each do |dose| %>
+            <li>
+              <%= dose.ingredient.name %> ( <%= dose.description %> )
+              <%= link_to "🗑", dose_path(dose), method: :delete, class: 'delete-btn' %>
+            </li>
+            <% end %>
+            <% end %>
+          </ul>
         </div>
+            <%= render 'doses/form', cocktail: @cocktail, dose: @dose, class: 'dose-form' %>
       </div>
-      </div>
-      <!-- <div class="cocktail-info">
-        <h1>Add an ingredient</h1>
-        <h2>The cocktail community awaits your recipe!</h2> -->
-  <!--       </div> -->
     </div>
   </div>
 </div>
 </div>
-<%= link_to "Go back", cocktails_path, class: 'btn-back', id: 'show-back' %>
+</div>
 
-
+      <!-- <div class="cocktail-info">
+        <h1>Add an ingredient</h1>
+        <h2>The cocktail community awaits your recipe!</h2> -->
+  <!--       </div> -->

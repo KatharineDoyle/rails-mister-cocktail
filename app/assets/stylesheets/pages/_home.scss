@@ -5,15 +5,19 @@
 //     background-size: cover !important;
 // // }
 
-.banner-content {
-  border: $yellow solid;
-}
-
 .banner-content h1 {
-  padding: 42px;
+  padding: 10px;
 }
 
 .banner-content h2 {
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Poiret One', cursive;
+}
+
+.banner-content h3 {
   font-size: 20px;
   display: flex;
   align-items: center;
@@ -21,12 +25,18 @@
   font-family: 'Poiret One', cursive;
 }
 
+.border-box {
+  width:calc(100% - 25px);
+  height:1px;
+  background: $yellow;
+}
+
 .banner-box {
   background-color: $black;
   justify-content: center;
   opacity: 0.7;
   padding: 10px 10px 10px 10px;
-  margin: 50px auto;
+  margin: 20px auto;
   border-color: white;
   border-radius: 10px;
 }
@@ -109,4 +119,24 @@
   }
 }
 
+.site-features {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 30px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
 
+.cocktail-box {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 25px;
+  text-align: center;
+  flex: 1;
+}
+
+.cocktail-box img {
+  width: 70px;
+  height: 70px;
+}
