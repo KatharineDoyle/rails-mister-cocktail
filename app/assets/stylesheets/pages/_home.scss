@@ -26,8 +26,9 @@
 }
 
 .border-box {
-  width:calc(100% - 25px);
+  width:calc(100% - 20px);
   height:1px;
+  align-items: center;
   background: $yellow;
 }
 
@@ -66,6 +67,7 @@
   display: flex;
   align-items: flex-end;
   justify-content: center;
+  padding: 20px;
 }
 
 .icon {
@@ -139,4 +141,9 @@
 .cocktail-box img {
   width: 70px;
   height: 70px;
+}
+
+.cocktail-box h1 {
+  font-weight: bolder;
+  font-size: 25px;
 }

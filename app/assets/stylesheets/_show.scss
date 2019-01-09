@@ -46,6 +46,7 @@
 
 .cocktail-img {
   height: 700px;
+  max-width: 500px;
   object-fit: cover;
   position: relative;
 }
@@ -80,10 +81,10 @@
   color: $black;
   font-size: 40px;
   border-bottom: solid $yellow;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  margin-left: 3%;
-  margin-right: 3%;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  margin-left: 5%;
+  margin-right: 5%;
   font-weight: bolder;
 }
 

@@ -1,16 +1,17 @@
 <div class="navbar-wagon">
   <!-- Logo -->
+  <div class="navbar-logo-links">
+  <%= link_to "See Our List", cocktails_path, class: "navbar-wagon-item navbar-wagon-link" %>
   <%= link_to cocktails_path, class: "navbar-wagon-brand" do %>
     <%= image_tag "cocktail.png", height: 50 %>
   <% end %>
+    <%= link_to "Add a Cocktail", new_cocktail_path, class: "navbar-wagon-item navbar-wagon-link" %>
+    </div>
 
   <!-- Right Navigation -->
   <div class="navbar-wagon-right hidden-xs hidden-sm">
 
     <!-- Links -->
-    <%= link_to "See Our List", cocktails_path, class: "navbar-wagon-item navbar-wagon-link" %>
-    <%= link_to "Add a Cocktail", new_cocktail_path, class: "navbar-wagon-item navbar-wagon-link" %>
-    <%= link_to "About", "#", class: "navbar-wagon-item navbar-wagon-link" %>
 
     <!-- Avatar with dropdown menu -->
     <div class="navbar-wagon-item">
