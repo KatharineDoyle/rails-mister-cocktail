@@ -24,7 +24,7 @@ gem 'font-awesome-sass', '~> 5.0.9'
 gem 'simple_form'
 
 gem 'carrierwave', '~> 1.2'
-gem 'cloudinary'
+gem 'cloudinary', "1.10.1.pre.rc"
 gem 'dotenv-rails', groups: [:development, :test]
 
 # Use CoffeeScript for .coffee assets and views
